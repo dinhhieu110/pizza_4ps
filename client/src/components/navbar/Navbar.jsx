@@ -1,44 +1,83 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faShoppingCart,
+  faGlobe,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 const Navbar = () => {
-  const [menu, setMenu] = useState("home");
+  const [menu, setMenu] = useState("voucher");
+  const [language, setLanguage] = useState("EN");
+
+  const handleChangeLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === "EN" ? "VN" : "EN"));
+  };
   return (
     <div className="navbar">
-      <h1 className="logo">Pizza 4P'S</h1>
-      <ul className="navbar-menu">
-        <li
-          onClick={() => setMenu("home")}
-          className={menu === "home" ? "active" : ""}
-        >
-          HOME
-        </li>
-        <li
-          onClick={() => setMenu("menu")}
-          className={menu === "menu" ? "active" : ""}
-        >
-          MENU
-        </li>
-        <li
-          onClick={() => setMenu("mobile-app")}
-          className={menu === "mobile-app" ? "active" : ""}
-        >
-          MOBILE-APP
-        </li>
-        <li
-          onClick={() => setMenu("contact-us")}
-          className={menu === "contact-us" ? "active" : ""}
-        >
-          CONTACT-US
-        </li>
-      </ul>
-      <div className="navbar-right">
-        <img src={assets.search_icon} alt="search_icon" />
-        <div className="navbar-cart-icon">
-          <img src={assets.basket_icon} alt="" />
-          <div className="dot"></div>
+      <div className="navbar-top">
+        <h1 className="left-logo">PIZZA 4P'S</h1>
+        <div className="mid-search">
+          <div className="search-icon">
+            <img
+              src={assets.search_icon}
+              alt="search_icon"
+              width={15}
+              height={15}
+            />
+          </div>
+          <input type="text" name="" id="" placeholder="Search" />
         </div>
-        <button>Sign In</button>
+        <div className="right-cart">
+          <div className="account-info">
+            <FontAwesomeIcon
+              icon={faUser}
+              style={{ color: "white", fontSize: "23px" }}
+            />
+          </div>
+          <div onClick={handleChangeLanguage} className="language-change">
+            <FontAwesomeIcon
+              icon={faGlobe}
+              style={{ color: "white", fontSize: "25px" }}
+            />
+            <span style={{ color: "white" }}>{language}</span>
+          </div>
+          <div className="cart-info">
+            <FontAwesomeIcon
+              icon={faShoppingCart}
+              style={{ color: "white", fontSize: "25px" }}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="navbar-bottom">
+        <ul className="navbar-menu">
+          <li
+            onClick={() => setMenu("voucher")}
+            className={menu === "voucher" ? "active" : ""}
+          >
+            Pizza 4Ps eGift-voucher
+          </li>
+          <li
+            onClick={() => setMenu("shipping")}
+            className={menu === "shipping" ? "active" : ""}
+          >
+            Shipping Policy
+          </li>
+          <li
+            onClick={() => setMenu("refund")}
+            className={menu === "refund" ? "active" : ""}
+          >
+            Return/ cancel and refund Policy
+          </li>
+          <li
+            onClick={() => setMenu("contact-us")}
+            className={menu === "contact-us" ? "active" : ""}
+          >
+            Hotline: <span className="hotline">19006043</span>
+          </li>
+        </ul>
       </div>
     </div>
   );

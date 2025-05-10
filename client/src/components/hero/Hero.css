@@ -38,12 +38,14 @@
 .hero-content h2{
     font-weight: 500;
     color: white;
-    font-size: max(4.5vw,22px);
+    font-size: max(5vw,22px);
+    font-family:  Italiana 
 }
 
 .hero-content p{
     color:white;
-    font-size: 1vw;
+    font-size: 1.3vw;
+    font-family: Italiana
 }
 
 .hero-content button{
@@ -54,4 +56,10 @@
     background-color: white;
     font-size: max(1vw, 13px);
     border-radius: 50px;
+}
+
+.hero-content button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
