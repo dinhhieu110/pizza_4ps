@@ -1,0 +1,46 @@
+.food-item {
+    width: 100%;
+    background-color: #fff;
+    padding: 8px 14px 14px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: fadeIn 3s;
+}
+
+.food-item:hover {
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.food-item img {
+    width: 100%;
+    /* height: auto; */
+}
+
+.food-item p:first-child {
+    color: var(--red);
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.food-item .item-name,
+.item-price {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.food-item .add-item-button {
+    padding: 8px;
+    border: 1px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    width: 40px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.food-item .add-item-button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}

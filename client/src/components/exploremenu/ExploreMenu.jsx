@@ -1,11 +1,10 @@
 import React from "react";
 import "./ExploreMenu.css";
 import { menu_list } from "../../assets/assets";
-const ExploreMenu = () => {
-  const [category, setCategory] = React.useState("all");
+const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="explore-menu" id="explore-menu">
-      <h1>Explore our menu</h1>
+      <h2>Explore our menu</h2>
       <div className="explore-menu-list">
         {menu_list.map((item, index) => (
           <div
