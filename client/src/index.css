@@ -1,31 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Italiana&family=Outfit:wght@100..900&display=swap');
-:root{
-  --primary-color:#242E52;
-}
-*{
-  padding: 0;
-  margin:0;
-  box-sizing: border-box;
-  font-family: 'IBM Plex Sans', sans-serif;  ;
+
+:root {
+  --primary-color: #242E52;
+  --light-blue: #024AB2;
 }
 
-body{
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+  ;
+}
+
+body {
   min-height: 100vh;
   background-color: #ddd6c5;
+  /* REMOVE LATER */
+  margin-bottom: 24px;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-.body{
+.body {
   width: 80%;
   margin: auto;
 }
 
-@keyframes fadeIn{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

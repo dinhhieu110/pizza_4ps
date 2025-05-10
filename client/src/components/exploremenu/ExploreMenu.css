@@ -1,0 +1,22 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.explore-menu h1 {
+    color: var(--primary-color);
+}
+
+.explore-menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
