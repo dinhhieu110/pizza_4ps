@@ -18,8 +18,6 @@
 body {
   min-height: 100vh;
   background-color: #ddd6c5;
-  /* REMOVE LATER */
-  margin-bottom: 24px;
 }
 
 a {

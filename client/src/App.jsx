@@ -1,5 +1,5 @@
-import React from "react";
-import { Navbar } from "./components";
+import React, { Fragment } from "react";
+import { Footer, Navbar } from "./components";
 import { Routes, Route } from "react-router-dom";
 import { Home, PlaceOrder, Cart } from "./pages";
 
@@ -14,7 +14,7 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
         </Routes>
       </div>
-      {/* Footer */}
+      <Footer />
     </div>
   );
 };
