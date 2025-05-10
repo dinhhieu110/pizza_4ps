@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./FoodItem.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { formatToVND } from "../../utils/util";
+import { StoreContext } from "../../context/StoreContext";
 const FoodItem = ({ key, id, name, price, image, description, category }) => {
-  const [itemCount, setItemCount] = useState(0);
-
+  const { cart, addToCart } = useContext(StoreContext);
   const handleAddToCart = (id) => {
-    console.log("Add to cart clicked", id);
+    addToCart(id);
   };
   return (
     <div className="food-item">

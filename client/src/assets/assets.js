@@ -10,6 +10,8 @@ import menu_5 from "./menu_5.png";
 import menu_6 from "./menu_6.png";
 import menu_7 from "./menu_7.png";
 import menu_8 from "./menu_8.png";
+import pizza_1 from "./pizza_1.png";
+import pizza_2 from "./pizza_2.png";
 
 import food_1 from "./food_1.png";
 import food_2 from "./food_2.png";
@@ -103,18 +105,18 @@ export const menu_list = [
   },
   {
     menu_name: "Cake",
-    menu_image: menu_2,
+    menu_image: menu_5,
   },
   {
     menu_name: "Chicken",
     menu_image: menu_6,
   },
   {
-    menu_name: "Pizza",
-    menu_image: menu_7,
+    menu_name: "Drinks",
+    menu_image: menu_8,
   },
   {
-    menu_name: "Noodles",
+    menu_name: "Salad",
     menu_image: menu_7,
   },
 ];
@@ -147,11 +149,11 @@ export const food_list = [
   },
   {
     _id: "4",
-    name: "4P'S House-made 4 Cheese Pizza",
+    name: "4P'S House-made 4 Tofu Salad",
     image: menu_7,
     price: 175000,
-    description: "4P'S House-made 4 Cheese Pizza",
-    category: "Pizza",
+    description: "4P'S House-made 4 Tofu Salad",
+    category: "Salad",
   },
   {
     _id: "5",
@@ -159,47 +161,46 @@ export const food_list = [
     image: menu_4,
     price: 200000,
     description: "Bolognese Spaghetti with Smoked Cheese",
-    category: "Rolls",
+    category: "Spaghetti",
   },
   {
     _id: "6",
-    name: "4P'S House-made 3 Cheese Pizza",
-    image: menu_1,
+    name: "4P'S Spicy Garlic Shrimp Pizza",
+    image: pizza_1,
     price: 200000,
-    description: "4P'S House-made 3 Cheese Pizza",
+    description: "4P'S Spicy Garlic Shrimp Pizza",
     category: "Pizza",
   },
   {
     _id: "7",
-    name: "Crab Tomato Cream Spaghetti ",
-    image: menu_2,
-    price: 175000,
-    description: "Crab Tomato Cream Spaghetti with Ricotta Cheese",
-    category: "Spaghetti",
-  },
-  {
-    _id: "8",
-    name: "Fried Chicken with Oriental Spice 2pcs",
-    image: menu_6,
-    price: 98000,
-    description:
-      "Food provides essential nutrients for overall health and well-being",
-    category: "Chicken",
-  },
-  {
-    _id: "9",
-    name: "4P'S House-made 4 Cheese Pizza",
-    image: menu_7,
-    price: 175000,
-    description: "4P'S House-made 4 Cheese Pizza",
+    name: "Burrata Parma Ham Margherita",
+    image: pizza_2,
+    price: 200000,
+    description: "Burrata Parma Ham Margherita",
     category: "Pizza",
   },
   {
+    _id: "8",
+    name: "Whitesangria Whitewine Mixed Fruits",
+    image: menu_8,
+    price: 98000,
+    description: "Whitesangria Whitewine Mixed Fruits",
+    category: "Drinks",
+  },
+  {
+    _id: "9",
+    name: "4P'S House-made 4 Tofu Salad",
+    image: menu_7,
+    price: 175000,
+    description: "4P'S House-made 4 Tofu Salad",
+    category: "Salad",
+  },
+  {
     _id: "10",
-    name: "Bolognese Spaghetti with Smoked Cheese",
-    image: menu_4,
+    name: "Vietnamese Cake with Smoked Cheese",
+    image: menu_5,
     price: 200000,
-    description: "Bolognese Spaghetti with Smoked Cheese",
-    category: "Rolls",
+    description: "Vietnamese Cake with Smoked Cheese",
+    category: "Cakes",
   },
 ];
