@@ -1,0 +1,11 @@
+.food-list h2 {
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.food-list .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    row-gap: 50px;
+}
