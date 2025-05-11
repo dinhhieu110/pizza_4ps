@@ -31,23 +31,14 @@ const Navbar = () => {
         </div>
         <div className="right-cart">
           <div className="account-info">
-            <FontAwesomeIcon
-              icon={faUser}
-              style={{ color: "white", fontSize: "23px" }}
-            />
+            <FontAwesomeIcon className="icon" icon={faUser} />
           </div>
           <div onClick={handleChangeLanguage} className="language-change">
-            <FontAwesomeIcon
-              icon={faGlobe}
-              style={{ color: "white", fontSize: "25px" }}
-            />
+            <FontAwesomeIcon className="icon" icon={faGlobe} />
             <span style={{ color: "white" }}>{language}</span>
           </div>
           <div className="cart-info">
-            <FontAwesomeIcon
-              icon={faShoppingCart}
-              style={{ color: "white", fontSize: "25px" }}
-            />
+            <FontAwesomeIcon className="icon" icon={faShoppingCart} />
           </div>
         </div>
       </div>

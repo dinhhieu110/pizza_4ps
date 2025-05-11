@@ -9,3 +9,9 @@
     gap: 30px;
     row-gap: 50px;
 }
+
+@media (max-width: 550px) {
+    .food-list .list {
+        gap: 15px;
+    }
+}
