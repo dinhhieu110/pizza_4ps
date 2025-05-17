@@ -5,11 +5,12 @@
 Built using the MERN stack, it provides a responsive user experience with pure CSS styling and a smooth ordering workflow.
 
 🚀 Tech Stack
+
 Frontend: React.js with Pure CSS
 
-Backend: Node.js + Express.js
+Backend: Node.js + Express.js (Pending)
 
-Database: MongoDB
+Database: MongoDB (Pending)
 
 API: RESTful APIs for order and product management
 
@@ -47,4 +48,8 @@ Visit http://localhost:3000 in your browser
 Tran Dinh Hieu (Wilson Tran) – A full-stack web developer passionate about building real-world applications using modern technologies.
 
 🚀 Preview
+![image](https://github.com/user-attachments/assets/e9afd4d6-13ed-4e97-85a2-868d7b6e142f)
+
+![image](https://github.com/user-attachments/assets/5b039975-d0df-4ec6-823e-39b87c500dcf)
+
 ![4p](https://github.com/user-attachments/assets/9f8b47f7-05e0-42d1-8947-987b93f3778c)
