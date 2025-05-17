@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   faShoppingCart,
   faGlobe,
@@ -17,7 +18,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-top">
-        <h1 className="left-logo">PIZZA 4P'S</h1>
+        <Link to="/">
+          <h1 className="left-logo">PIZZA 4P'S</h1>
+        </Link>
         <div className="mid-search">
           <div className="search-icon">
             <img
@@ -31,7 +34,9 @@ const Navbar = () => {
         </div>
         <div className="right-cart">
           <div className="account-info">
-            <FontAwesomeIcon className="icon" icon={faUser} />
+            <Link to="/login">
+              <FontAwesomeIcon className="icon" icon={faUser} />
+            </Link>
           </div>
           <div onClick={handleChangeLanguage} className="language-change">
             <FontAwesomeIcon className="icon" icon={faGlobe} />
