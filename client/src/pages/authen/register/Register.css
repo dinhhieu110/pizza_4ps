@@ -1,0 +1,131 @@
+.register {
+    width: 100%;
+    height: 100vh;
+    background-color: #ddd6c5;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.register .card {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.register .card .close {
+    position: absolute;
+    top: 30px;
+    right: -430px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.register .card h2 {
+    font-weight: 700;
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.register .card p,
+.register .card span {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.register .card span {
+    font-size: 12px;
+    font-weight: 350;
+    margin-bottom: -10px;
+}
+
+.register .card span a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.register .card p {
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+.register .card hr {
+    border: -2px solid rgb(255, 255, 255);
+    width: 106%;
+}
+
+.register .card .fullname {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.register .card .fullname input,
+.register .card input {
+    background-color: #eeeff1;
+    padding: 15px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.register .card .date,
+.register .card .gender {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+}
+
+.register .card .date select,
+.register .card .gender select {
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register .card .gender .rad {
+    width: 100%;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 8px;
+}
+
+.register .card .gender .rad input[type="radio"] {
+    transform: scale(0.6);
+    margin-right: -30px;
+}
+
+.register .card button {
+    color: #fff;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 0px;
+    width: 50%;
+    border-radius: 6px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.register .card button:hover {
+    background-color: var(--primary-color-hover);
+}
